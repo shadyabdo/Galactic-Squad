@@ -837,6 +837,9 @@ footer .sign .btn-signup {
     }
 
 
+
+
+
     .formText {
         margin-right: -45px;
     }
@@ -859,6 +862,27 @@ footer .sign .btn-signup {
         margin-right: -40px;
     }
 
+    .vbox-container {
+        position: absolute;
+        inset: 0px;
+        overflow: hidden scroll;
+        z-index: 20;
+        min-height: 100%;
+        width: 100%;
+        background: #6433e043;
+    }
+    
+    .vbox-content {
+        text-align: center;
+        width: 100;
+        min-height: 100%;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
+    }
 }
 
 /* ////////// */
@@ -1042,9 +1066,30 @@ form {
     .vbox-content {
         padding: 0px 10px;
     }
+
+    .navbar .btn {
+        background: linear-gradient(to right, #9856e8, #6433E0);
+        background-color: #9841ff;
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 20px;
+        font-size: 14px;
+       width: 100%;
+    }
+    .offcanvas-top {
+        top: 0;
+        right: 0;
+        left: 0;
+        background: #2f147337;
+        height: 71vh;
+        border-radius: 0px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(7.9px);
+        transform: translateY(-100%);
+    }
 }
 /* /////////////// */
-@media(max-width:380px){
+@media(max-width:385px){
     .TOURNAMENT .team .text{
         padding: 5px 10px;
         margin-right: 0px;
@@ -1090,6 +1135,17 @@ form {
         font-size: 14px;
        
     }
+    .offcanvas-top {
+        top: 0;
+        right: 0;
+        left: 0;
+        background: #2f147337;
+        height: 71vh;
+        border-radius: 0px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(7.9px);
+        transform: translateY(-100%);
+    }
     .navbar .btn {
         background: linear-gradient(to right, #9856e8, #6433E0);
         background-color: #9841ff;
@@ -1102,7 +1158,7 @@ form {
 }
 
 /* /////////////////////////// */
-@media(max-width:321px){
+@media(max-width:319px){
 
     .TOURNAMENT .team .text {
         width: 280px;
@@ -1205,5 +1261,16 @@ form {
         padding: 2px 7px;
         font-size: 16px;
     
+    }
+    .offcanvas-top {
+        top: 0;
+        right: 0;
+        left: 0;
+        background: #2f147337;
+        height: 60vh;
+        border-radius: 0px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(7.9px);
+        transform: translateY(-100%);
     }
 }
